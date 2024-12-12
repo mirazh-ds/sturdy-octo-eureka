@@ -20,10 +20,9 @@ const Menu: React.FC = () => {
             <div>
                 <div>
                     <ul>
-                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link></a></li>
-                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link></a></li>
-                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link></a></li>
-                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/about">About</Link></a></li>
+                        <li><p className='MenuA' onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link>      </p ></li>
+                        <li><p className='MenuA' onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link>      </p ></li>
+                        <li><p className='MenuA' onClick={closeMenu}><Link className='MenuLink' to="/about">About</Link></p ></li>
                     </ul>
                 </div>
             </div>

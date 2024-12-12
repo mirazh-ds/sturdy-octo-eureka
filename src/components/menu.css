@@ -95,7 +95,7 @@
     justify-content: center;
 }
 .menu-wrap .menu > div{
-    background-color: var(--Coral-red);
+    background-color: var(--Glass-White);
     backdrop-filter: blur(5px);
     border-radius: 100%;
     width: 250vh;
@@ -121,17 +121,14 @@
     padding: 1rem;
 }
 
-.menu-wrap .menu >div > div > ul > li > a{
-    color: inherit;
-    transition: color 0.4s ease;
-    text-decoration: none;
-}
+
 
 
 
 .MenuLink {
     text-decoration: none;
     color:var(--White);
+    font-size: 8rem;
 }
 
 .MenuLink:hover {
@@ -142,10 +139,7 @@
 
 
 @media screen and (max-width: 768px){
-    .menu-wrap .menu > div > div > ul > li{
-        font-size: 2rem;
-        
-    }
+
 
     ul {
         padding: 0;
@@ -153,9 +147,16 @@
         list-style: none;
     }
 
+    
+    .MenuLink {
+        text-decoration: none;
+        color:var(--White);
+        font-size: 3rem;
+    }
+
 
     .menu-wrap .menu > div{
-        background-color: var(--Coral-red);
+        background-color: var(--Glass-White);
         border-radius: 50%;
         width: 200vh;
         height: 200vh;
