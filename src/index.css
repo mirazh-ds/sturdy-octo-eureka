@@ -25,16 +25,19 @@
   --Light-green: #C6ECAE; 
   --Grayish-blue: #777DA7;
   --Coral-red: #FE5F55; 
+  --Deep-blue: #004e81;
+  --text-4-light: #170c4b;
 
-  --Glass-White: #ffffff80;
-  --Glass-Amethyst: #9b5de580;
-  --Glass-Brilliant-rose: #f15bb580;
-  --Glass-Maize: #fee44080;
-  --Glass-Deep-sky-blue: #00bbf980;
-  --Glass-Aquamarine: #00f5d480;
-  --Glass-Light-green: #C6ECAE80;
-  --Glass-Grayish-blue: #777DA780;
-  --Glass-Coral-red: #FE5F5580;
+  --Glass-White: #ffffff60;
+  --Ultra-Glass-White: #ffffff18;
+  --Glass-Amethyst: #9a5de55e;
+  --Glass-Brilliant-rose: #f15bb55b;
+  --Glass-Maize: #fee54056;
+  --Glass-Deep-sky-blue: #00bbf94f;
+  --Glass-Aquamarine: #00f5d459;
+  --Glass-Light-green: #c6ecae59;
+  --Glass-Grayish-blue: #3e40555d;
+  --Glass-Coral-red: #fe605552;
 
   --menu-speed: 0.75s;
 }

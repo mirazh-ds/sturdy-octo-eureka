@@ -1,24 +1,41 @@
 .card {
     font-family: "Marmelad", sans-serif;
 
-    max-width: 300px;
-    min-height: 200px;
+    min-height: 300px;
+    max-width: 400px;
+    height: 300px;
+    width: 400px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    max-width: 500px;
-    height: 300px;
-    padding: 35px;
+    padding: 0px;
   
     border-radius: 10px;
-    background-color: rgba(247, 247, 247, 0.342);
+    background-color: var(--Glass-White);
     box-shadow: 0 0 100px 1px rgba(255, 255, 255, 0.164);
   
     backdrop-filter: blur(11px);
   }
   
-  .card-footer {
-    font-size: 0.65em;
-    color: #446;
+  .cardDark {
+    font-family: "Marmelad", sans-serif;
+
+    min-height: 300px;
+    max-width: 400px;
+    height: 300px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0px;
+  
+    border-radius: 10px;
+    background-color: var(--Glass-Grayish-blue);
+    box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.164);
+  
+    backdrop-filter: blur(11px);
   }

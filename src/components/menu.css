@@ -31,13 +31,15 @@
 .menu-wrap .hamburger >div {
     position: relative;
     width: 100%;    
-    height: 4px;
+    height: 5px;
     background-color: var(--White);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
 }
+
+
 /* Top and bottom lines */
 .menu-wrap .hamburger > div:before,
 .menu-wrap .hamburger > div:after{
@@ -46,9 +48,11 @@
     z-index: 1;
     top: -10px;
     width: 100%;
-    height: 4px;
+    height: 5px;
     background: inherit;
 }
+
+
 /* Moves line down */
 .menu-wrap .hamburger > div:after{
     top: 10px;
@@ -57,6 +61,7 @@
 .menu-wrap .toggler:checked + .hamburger > div{
     transform: rotate(135deg);
     height: 10px;
+    background-color: var(--Coral-red);
 
 }
 /* Turn Lines into X */
@@ -65,7 +70,10 @@
     top: 0;
     transform: rotate(90deg);
     height: 10px;
+    transition: background-color 0.4s ease;
+    background-color: var(--Coral-red);
 }
+
 /* Rotate on hover when checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div{
     transform: rotate(225deg);
@@ -96,7 +104,7 @@
 }
 .menu-wrap .menu > div{
     background-color: var(--Glass-White);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border-radius: 100%;
     width: 250vh;
     height: 250vh;
@@ -121,7 +129,7 @@
 }
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: #fff;
+    color: var(--Maize);
     font-size: 1.5rem;
     padding: 1rem;
 }
@@ -134,8 +142,9 @@
 
 .MenuLink {
     text-decoration: none;
-    color:var(--White);
-    font-size: 8rem;
+    color:var(--Coral-red);
+    font-size: 5rem;
+
 }
 
 .MenuLink:hover {
@@ -155,8 +164,8 @@
 
     .MenuLink {
         text-decoration: none;
-        color:var(--White);
-        font-size: 3rem;
+        color:var(--Coral-red);
+        font-size: 6rem;
         margin: 0;
         padding: 0 ;
     }

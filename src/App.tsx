@@ -4,29 +4,34 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import Menu from './components/menu';
 import About from './pages/about';
 import Wallpaper from './components/wallpaper';
+import { ThemeProvider } from './utility/TjemeContext';
+
 function App() {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <AppContent />
+      </Router>
+    </ThemeProvider>
   );
 }
+
 function AppContent() {
   const location = useLocation();
   return (
-<>
+    <>
       <Menu />
       {location.pathname === '/' && (
         <>
           <Wallpaper />
-
         </>
       )}
       <Routes>
         <Route path="/" />
         <Route path="/about" element={<About />} />
       </Routes>
-</>
+    </>
   );
 }
+
 export default App;
