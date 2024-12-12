@@ -1,7 +1,14 @@
-html {
+ html {
     height:100%;
     background-color:var(--Aquamarine);
+    display: flex;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
 }
+
 
 
  .HomeMainBody {
@@ -15,3 +22,5 @@ html {
     align-items: center;
     justify-content: center;
 } 
+
+

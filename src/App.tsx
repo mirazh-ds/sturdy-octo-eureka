@@ -11,16 +11,15 @@ function App() {
     </Router>
   );
 }
-
 function AppContent() {
   const location = useLocation();
-
   return (
 <>
       <Menu />
       {location.pathname === '/' && (
         <>
           <Wallpaper />
+
         </>
       )}
       <Routes>
@@ -30,6 +29,4 @@ function AppContent() {
 </>
   );
 }
-
-
 export default App;

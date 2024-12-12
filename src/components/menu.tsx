@@ -18,7 +18,7 @@ const Menu: React.FC = () => {
         <div className="hamburger"><div></div></div>
         <div className="menu">
             <div>
-                <div>
+                <div className='uelle'>
                     <ul>
                         <li><p className='MenuA' onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link>      </p ></li>
                         <li><p className='MenuA' onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link>      </p ></li>
