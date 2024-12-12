@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-:root{
-    --primary-color: rgba(20, 177, 177, 0.5);
-    --overlay-color: rgba(24,39,51,0.85);
-    --menu-speed: 0.75s;
-}
-
 .menu-wrap{
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    font-family: "Marmelad", sans-serif;
 }
 .menu-wrap .toggler{
     position: absolute;
@@ -30,7 +23,6 @@
     width: 60px;
     height: 60px;
     padding: 1rem;
-    /* background: var(--primary-color); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,9 +30,9 @@
 /* Hamburger line */
 .menu-wrap .hamburger >div {
     position: relative;
-    width: 100%;
+    width: 100%;    
     height: 4px;
-    background-color: #ff0000;
+    background-color: var(--White);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +95,7 @@
     justify-content: center;
 }
 .menu-wrap .menu > div{
-    background-color: var(--overlay-color);
+    background-color: var(--Coral-red);
     backdrop-filter: blur(5px);
     border-radius: 100%;
     width: 250vh;
@@ -131,19 +123,39 @@
 
 .menu-wrap .menu >div > div > ul > li > a{
     color: inherit;
-    text-decoration: none;
     transition: color 0.4s ease;
+    text-decoration: none;
 }
+
+
+
+.MenuLink {
+    text-decoration: none;
+    color:var(--White);
+}
+
+.MenuLink:hover {
+    color: var(--Amethyst);
+}
+
+
 
 
 @media screen and (max-width: 768px){
     .menu-wrap .menu > div > div > ul > li{
         font-size: 2rem;
+        
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
 
     .menu-wrap .menu > div{
-        background-color: var(--overlay-color);
+        background-color: var(--Coral-red);
         border-radius: 50%;
         width: 200vh;
         height: 200vh;
@@ -153,6 +165,8 @@
         justify-content: center;
          transform: scale(0); 
         transition: all 0.4s ease;
+        margin: 0;
+        padding: 0;
     }
     
 }

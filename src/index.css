@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+.marmelad-regular {
+  font-family: "Marmelad", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.anton-sc-regular {
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root{
+  --White: #ffffff;
+  --Amethyst: #9b5de5ff;
+  --Brilliant-rose: #f15bb5ff;
+  --Maize: #fee440ff;
+  --Deep-sky-blue: #00bbf9ff;
+  --Aquamarine: #00f5d4ff;
+  --Light-green: #C6ECAE; 
+  --Grayish-blue: #777DA7;
+  --Coral-red: #FE5F55; 
+
+  --Glass-White: #ffffff80;
+  --Glass-Amethyst: #9b5de580;
+  --Glass-Brilliant-rose: #f15bb580;
+  --Glass-Maize: #fee44080;
+  --Glass-Deep-sky-blue: #00bbf980;
+  --Glass-Aquamarine: #00f5d480;
+  --Glass-Light-green: #C6ECAE80;
+  --Glass-Grayish-blue: #777DA780;
+  --Glass-Coral-red: #FE5F5580;
+
+  --menu-speed: 0.75s;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './utility/cathead.gif';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Menu from './components/menu';
-
+import About from './pages/about';
+import Wallpaper from './components/wallpaper';
 function App() {
   return (
     <Router>
@@ -16,13 +16,20 @@ function AppContent() {
   const location = useLocation();
 
   return (
-    <div>
+<>
       <Menu />
-      <div className='HomeMainBody'>
-        <h1 className='h1Home'>Progetto Hackthon</h1>
-      </div>
-    </div>
+      {location.pathname === '/' && (
+        <>
+          <Wallpaper />
+        </>
+      )}
+      <Routes>
+        <Route path="/" />
+        <Route path="/about" element={<About />} />
+      </Routes>
+</>
   );
 }
+
 
 export default App;

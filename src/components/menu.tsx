@@ -5,6 +5,13 @@ import './menu.css';
 import About from '../pages/about';
 
 const Menu: React.FC = () => {
+  const closeMenu = () => {
+    const toggler = document.querySelector('.toggler') as HTMLInputElement;
+    if (toggler) {
+      toggler.checked = false;
+    }
+  };
+
   return (
     <div className="menu-wrap">
         <input type="checkbox" className="toggler"/>
@@ -13,19 +20,14 @@ const Menu: React.FC = () => {
             <div>
                 <div>
                     <ul>
-                        <li><a href="#"><Link to="/">Home</Link></a></li>
-                        <li><a href="#">Progetto Us</a></li>
-                        <li><a href="#">Finalità</a></li>
-                        <li><a href="#"><Link to="/about">About</Link></a></li>
+                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link></a></li>
+                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link></a></li>
+                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/">Home</Link></a></li>
+                        <li><a className='MenuA' href="#" onClick={closeMenu}><Link className='MenuLink' to="/about">About</Link></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        
-        <Routes>
-        <Route path="/"  />
-          <Route path="/about" element={<About />} />
-        </Routes>
     </div>
   );
 };

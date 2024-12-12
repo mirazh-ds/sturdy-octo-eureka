@@ -1,0 +1,18 @@
+.About {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.AboutSection {
+    text-align: center;
+    background-color: rgba(180, 180, 180, 0);
+}
