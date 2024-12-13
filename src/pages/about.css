@@ -38,7 +38,7 @@
     width: 100%;
     height: 100%;
     padding: 0px;
-
+    padding-bottom: 20px;
 
     align-items: center;
     justify-items: center;
@@ -57,12 +57,12 @@
     backdrop-filter: blur(15px);
 }
 
-.AboutH1{
-    font-size: 3em;
-    
+.AboutH1 {
+    font-size: 2.5em;
     padding: 0px;
     text-align: center;
-
+    margin-bottom: 10px;
+    color: var(--Coral-red);
 }
 
 .AboutP{
@@ -73,13 +73,21 @@
 
 .card-footer {
     font-size: 0.65em;
-    
+
     padding: 10px;
   }
 
   .AboutImage {
-    width: 100%;
-    height: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .AboutImageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
   }
 
 @media screen and (max-width: 768px){
@@ -97,6 +105,8 @@
         margin: 0px;
         margin-top: 20%;
         overflow: scroll;
+        border-radius:20px 20px 0 0;
+
     }
 
     .About {
@@ -106,6 +116,7 @@
         padding: 0px;
         align-self: center;
         justify-items: center;
+        background-color: transparent;
     }
 
     .AboutSection {
@@ -113,6 +124,22 @@
         flex-direction: column;
         background-color: transparent;
         row-gap: 20px;
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius:20px 20px 0 0;
+        padding-bottom: 40px;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
     }
 
     .AboutH1{
@@ -137,13 +164,18 @@
         padding: 0px;
     }
 
-    .AboutImageDiv {
+    .AboutImage {
+        max-width: 90%;
+        height: auto;
+      }
+    
+      .AboutImageDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         justify-self: center;
         align-self: center;
-        width: 60%;
-        height: auto;
-        margin: 100px 0 100px 0;
-    }
+      }
     
 }
  

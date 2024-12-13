@@ -1,41 +1,43 @@
 .card {
     font-family: "Marmelad", sans-serif;
-
-    min-height: 300px;
-    max-width: 400px;
-    height: 300px;
-    width: 400px;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+
 
     padding: 0px;
-  
     border-radius: 10px;
     background-color: var(--Glass-White);
-    box-shadow: 0 0 100px 1px rgba(255, 255, 255, 0.164);
-  
-    backdrop-filter: blur(11px);
-  }
-  
-  .cardDark {
-    font-family: "Marmelad", sans-serif;
-
-    min-height: 300px;
-    max-width: 400px;
-    height: 300px;
-    width: 400px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding: 0px;
-  
-    border-radius: 10px;
-    background-color: var(--Glass-Grayish-blue);
     box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.164);
   
     backdrop-filter: blur(11px);
+
+    margin: 10px;
+  }
+  
+  .cardDark {
+    background-color: var(--Glass-Grayish-blue);
+  }
+
+
+  @media screen and (max-width: 768px){
+
+    .card {
+
+        min-height: 50vh;
+        max-width: 90%;
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .cardDark {
+        background-color: var(--Glass-Grayish-blue);
+        min-height: 50vh;
+        max-width: 90%;
+        height: 400px;
+        width:  400px;
+    }
   }

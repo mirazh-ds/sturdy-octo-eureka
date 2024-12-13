@@ -34,7 +34,7 @@ const About: React.FC = () => {
       </div>
 
       <div className='AboutImageDiv'>
-        <img className='AboutImage' src="https://via.placeholder.com/500x300" alt="placeholder" />
+        <img className='AboutImage' src="https://via.placeholder.com/700x400" alt="placeholder" />
       </div>
 
       <div className='tres'>

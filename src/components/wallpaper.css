@@ -54,7 +54,7 @@ html {
   position: fixed;
   right: 50%;
   left: 50%;
-  bottom: 2%;
+  top: 2%;
   /* switch */
   --switch-bg: rgb(255, 255, 255);
   --switch-width: 48px;
