@@ -29,7 +29,7 @@ const AppContent = React.memo(() => {
     <>
       <Menu />
       {isHomePage && <Wallpaper />}
-      <Suspense fallback={<Loader />}>
+      <Suspense /*fallback={<Loader />}*/>
         <Routes>
           <Route path="/" />
           <Route path="/about" element={<About />} />

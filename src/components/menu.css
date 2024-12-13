@@ -5,8 +5,19 @@
     left: 0;
     z-index: 1;
     font-family: "Marmelad", sans-serif;
-    
 }
+
+.menu-wrap .menu{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(2px);
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+
 .menu-wrap .toggler{
     position: absolute;
     top: 0;
@@ -164,6 +175,8 @@ div.div.darkdiv {
     text-decoration: none;
     color:var(--Coral-red);
     font-size: 5rem;
+    font-weight: 900;
+    font-weight: bold;
 
 }
 
@@ -252,6 +265,8 @@ div.div.darkdiv {
         color: var(--Maize);
         font-size: 1.5rem;
         padding: 1rem;
+        font-weight: 900;
+        font-style: bold;
     }
     
     
