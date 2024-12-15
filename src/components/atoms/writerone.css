@@ -1,0 +1,95 @@
+
+
+  .container{
+    width: 100vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .little {
+    color: #ffffff;
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 0 35%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170px;
+    animation: type 2s steps(40,end) forwards;
+  }
+  
+  .great {
+    opacity: 0;
+    font-family: "courier new", monospace;
+    margin: 0 auto auto auto;
+    background: var(--Coral-red);
+    font-weight: 800;
+    font-size: 100px;  
+    width: 3em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+  }
+  
+  @keyframes shring-animation {
+    0% {
+      background-position: 0 0;
+      opacity: 0;
+      width: 0;
+    }
+    1% {
+      background-position: 0 0;
+      opacity: 1;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+    50% {
+      background-position: 150px 0;
+      opacity: 1;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+    100% {
+      background-position: 100% 0;
+      opacity: 1;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    1%, 99%{
+      border-right: 1px solid orange;
+    }
+    100%{
+      border-right: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  .container{
+    margin-top: 50%;
+    height: auto;
+  }
+  .little {
+    font-size: 15px;
+    margin: 0 0 0 30%;
+    width: 150px;
+  }
+  .great {
+    font-size: 70px;
+    width: 3em;
+  }
+  
+}
