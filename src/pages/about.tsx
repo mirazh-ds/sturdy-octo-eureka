@@ -16,7 +16,10 @@ const About: React.FC = () => {
         <div className="box">
           <span></span>
           <div className={`content ${isDarkMode ? 'darkcontent' : 'content'}`}>
-            <h2>Group group = New Group( ); </h2>
+          <section className={`boxheader ${isDarkMode ? 'darkboxheader' : 'boxheader'}`}>
+          <h2>Group group = New Group( ); </h2>
+          </section>
+            
 
               <GlassCard>
                 <section className='profile'>
@@ -55,11 +58,12 @@ const About: React.FC = () => {
                 </section>
               </GlassCard>
 
-
+              <section className={`boxfooter ${isDarkMode ? 'darkboxfooter' : 'boxfooter'}`}>
+            sadsadasdudsauhi husadu saduihsaduhi u
+          </section>
 
           </div>
         </div>
-
       </div>  
     </>
   );

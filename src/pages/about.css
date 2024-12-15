@@ -1,7 +1,5 @@
 
-
-
-  .AboutBody {
+.AboutBody {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap ;
@@ -16,6 +14,7 @@
     overflow: hidden;
     color: var(--text-4-light);
     overflow-x: hidden;
+    place-self: center;
 }
 
 
@@ -95,7 +94,8 @@
     position: relative;
     width: 90vw;
     height: auto;
-    padding: 20px 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -116,7 +116,6 @@
    
 h2 {
     font-size: 20px;
-    margin-bottom: 2rem;
     width: 100%;
     text-align: center;
     font-family: 'Sen', sans-serif;
@@ -127,23 +126,59 @@ img.cathead {
     width: 100px;
 }
 
+.boxheader{
+    background-color: var(--Ultra-Glass-White);
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+.boxfooter{
+    background-color: var(--Ultra-Glass-White);
+    width: 90%;
+    height: 25vh;
+    border-radius: 10px;
+}
+
    @media screen and (max-width: 768px) {
 
     .box {
         height: auto;
     }
 
+    .boxheader{
+        height: 8vh;
+        width: 90%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+
+    .darkboxheader{
+        background-color: var(  --Glass-Grayish-blue);
+    }
+
+    .boxfooter{
+        height: 25vh;
+        width: 90%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+
+    .darkboxfooter{
+        background-color: var(  --Glass-Grayish-blue);
+    }
+
     .AboutBody{
         height: auto;
         width: 95vw;
-        border-radius: 20px;
-        padding-top: 1.5rem;
+        border-radius: 10px;
+        padding-top: 3.5rem;
         padding-bottom: 3rem;
     }
 
-    h2 {
-       margin-top: 4rem;
-    }
+
 
     
    }

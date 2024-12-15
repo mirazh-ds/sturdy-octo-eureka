@@ -1,7 +1,7 @@
 .card {
   background-color: var(--Ultra-Glass-White);
   backdrop-filter: blur(11px);
-  height: 70vh;
+  height: 50vh;
   width: 15vw;
   margin-top: 2rem;
   margin-bottom: 2rem;
