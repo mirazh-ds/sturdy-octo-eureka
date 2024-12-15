@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Marmelad&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 
 
 .marmelad-regular {
   font-family: "Marmelad", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sen-regular {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -33,7 +41,7 @@
   --Ultra-Glass-White: #ffffff18;
   --Glass-Amethyst: #9a5de55e;
   --Glass-Brilliant-rose: #f15bb55b;
- : #fee54056;
+ --Glass-maize: #fee54056;
   --Glass-Deep-sky-blue: #00bbf94f;
   --Glass-Aquamarine: #00f5d459;
   --Glass-Light-green: #c6ecae59;

@@ -7,6 +7,7 @@ import { ThemeProvider } from './utility/TjemeContext';
 import usePreloadPages from './utility/usePreloadPages';
 import Project from './pages/project';
 import Writerone from './components/atoms/writerone';
+import GlassCard from './components/atoms/card';
 
 const About = lazy(() => import('./pages/about'));
 
@@ -36,9 +37,13 @@ const AppContent = React.memo(() => {
 {     isHomePage && <Wallpaper/>
     
 }
-{     isHomePage && <Writerone>
-        Group</Writerone>
+{     isHomePage && 
+        <Writerone>
+        Group
+        </Writerone>
+
 }   
+
 
       <Suspense fallback={<Writerone>Loading...</Writerone>}>
         <Routes>
