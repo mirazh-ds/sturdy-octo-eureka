@@ -1,3 +1,277 @@
-.plots {
-    transform: scale(0.7);
+.ProjectBody {
+    place-self: center;
+    margin: 0 auto;
+    margin-top: 8vh;
+    padding: 2rem 1rem 2rem 1rem;
+    width: 90vw;
+    height: auto;
+    background-color: var(--Glass-White);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.ProjectTitle {
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Glass-White);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.ProjectDescription {
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: auto;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Glass-White);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.ProjectDescription > p > a {
+    text-decoration: none;
+    color: var(--Coral-red);
+}
+.datalink:hover {
+    
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
+
+.ProjectPlots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d3d{
+    cursor: pointer;
+
+}
+
+.PlotsDescription {
+  background-color: var(--Ultra-Glass-White);
+  width: 40%;
+  height: 400px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+
+    .ProjectBody{
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+        width: 90vw !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+        background-color: transparent !important;
+    }
+
+    .ProjectTitle {
+        font-family: 'Sen', sans-serif;
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Glass-White);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+
+    .ProjectDescription {
+        font-family: 'Sen', sans-serif;
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        padding: 2rem;
+        height: auto;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(255, 255, 255, 0);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .ProjectPlots {
+        width: 90vw !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        backdrop-filter: none;
+    }
+
+    .Plots {
+        display: flex;
+        transform: scale(0.5);
+        margin-top: -2rem;
+    }
+
+    .PlotsDescription {
+        width: 90vw;
+        height: 400px;  
+        margin-top: -8rem;
+        background-color: var(--Ultra-Glass-White);
+        border-radius: 10px;
+    }
+
+    
+}
+
+
+
+
+/* DARK MODE */
+
+.DarkProjectBody {
+    place-self: center;
+    margin: 0 auto;
+    margin-top: 8vh;
+    padding: 2rem 1rem 2rem 1rem;
+    width: 90vw;
+    height: auto;
+    background-color: var(--Glass-White);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.DarkProjectTitle {
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Glass-White);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.DarkProjectDescription {
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: auto;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Glass-White);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.DarkProjectDescription > p > a {
+    text-decoration: none;
+    color: var(--Coral-red);
+}
+
+.DarkProjectPlots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DarkPlots {
+    display: flex;
+}
+
+.DarkPlotsDescription {
+    background-color: var(--Ultra-Glass-White);
+    width: 40%;
+    height: 400px;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .DarkProjectBody {
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+        width: 90vw !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+        background-color: transparent !important;
+    }
+
+    .DarkProjectTitle {
+        font-family: 'Sen', sans-serif;
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Glass-White);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+
+    .DarkProjectDescription {
+        font-family: 'Sen', sans-serif;
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        padding: 2rem;
+        height: auto;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(255, 255, 255, 0);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .DarkProjectPlots {
+        width: 90vw !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        backdrop-filter: none;
+    }
+
+    .DarkPlots {
+        display: flex;
+        transform: scale(0.5);
+        margin-top: -2rem;
+    }
+
+    .DarkPlotsDescription {
+        width: 90vw;
+        height: 400px;  
+        margin-top: -8rem;
+        background-color: var(--Ultra-Glass-White);
+        border-radius: 10px;
+    }
 }
