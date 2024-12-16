@@ -12,15 +12,26 @@
 
 .ProjectTitle {
     font-family: 'Sen', sans-serif;
+    font-size: 2rem;
     display: flex;
-    flex-direction: row;
-    width: 90vw;
-    height: 5vh;
+    flex-direction: column;
+    width: 60vw;
+    height: 20vh;
+    padding-top: 5vh;
+    row-gap: 0;
+    transform: translateY(-5rem);
+    margin-top: -5rem;
     justify-content: center;
     align-items: center;
-    background-color: var(--Glass-White);
+    justify-self: center;
+    align-self: center;
+    background-color: var(--ULTRAWHITE);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+}
+
+.Strong {
+    color: var(--OT-RED);
 }
 
 .ProjectDescription {
@@ -32,10 +43,28 @@
     justify-self: center;
     justify-content: center;
     align-items: center;
-    background-color: var(--Glass-White);
+    background-color: var(--ULTRAWHITE);
+    padding-left: 2rem;
+    padding-right: 2rem;
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    margin-top: -3rem;
     margin-bottom: 2rem;
+}
+.ProjectDescriptionFooter{
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Glass-OT-WHITE);
+    backdrop-filter: blur(10px);
+    border-radius: 10px 10px 0 0 ;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
 }
 
 .ProjectDescription > p > a {
@@ -62,13 +91,64 @@
 
 }
 
-.PlotsDescription {
-    background-color: var(--Ultra-Glass-White);
-    width: 70%;
+.Plots:nth-child(1),
+.Plots:nth-child(5) {
+    z-index: 10;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.Plots:nth-child(4),
+.Plots:nth-child(8) {
+    z-index: 9;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+div.PlotsDescription:nth-of-type(2),
+div.PlotsDescription:nth-of-type(6) {
+    background-color: var(--ULTRAWHITE);
+    backdrop-filter: blur(10px);
+    width: 50%;
     height: 400px;
     display: flex;
+    justify-content: flex-end;
     border-radius: 10px;
-    margin-left: -50rem;
+    margin-left: 0rem;
+    padding-left: 5rem;
+    transform: translateX(-5rem);
+    z-index: 1;
+}
+
+.PlotsDescription:nth-of-type(3),
+.PlotsDescription:nth-of-type(7) {
+    background-color:var(--ULTRAWHITE);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    margin-left: 0rem;
+    padding-right: 5rem;
+    transform: translateX(5rem);
+    z-index: 1;
+}
+
+
+
+.AsidePlots {
+    display: flex;
+    font-family: 'Sen', sans-serif;
+    font-size: 2rem !important;
+    flex-direction: column;
+    width: 90%;
+    height: 60%;
+    background-color:transparent;
+    
+    margin: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -93,7 +173,7 @@
         height: 5vh;
         justify-content: center;
         align-items: center;
-        background-color: var(--Glass-White);
+        background-color: var(--Glass-OT-WHITE);
         backdrop-filter: blur(10px);
         border-radius: 10px;
     }
@@ -139,7 +219,10 @@
         margin-top: -8rem;
         background-color: var(--Ultra-Glass-White);
         border-radius: 10px;
+        justify-content: end;
+        align-content: center;
     }
+    
 
     
 }
@@ -150,12 +233,7 @@
 /* DARK MODE */
 
 .DarkProjectBody {
-    place-self: center;
-    margin: 0 auto;
-    margin-top: 8vh;
-    padding: 2rem 1rem 2rem 1rem;
-    width: 90vw;
-    height: auto;
+
     background-color: transparent;
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -163,31 +241,17 @@
 }
 
 .DarkProjectTitle {
-    font-family: 'Sen', sans-serif;
-    display: flex;
-    flex-direction: row;
-    width: 90vw;
-    height: 5vh;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--Glass-Grayish-blue);
+
+    background-color: var(--Glass-OT-BLACK);
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
 
 .DarkProjectDescription {
-    font-family: 'Sen', sans-serif;
-    display: flex;
-    flex-direction: row;
-    width: 70vw;
-    height: auto;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--Glass-Grayish-blue);
+
+    background-color: var(--Glass-OT-BLACK);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    margin-bottom: 2rem;
 }
 
 .DarkProjectDescription > p > a {
@@ -196,25 +260,39 @@
 }
 
 .DarkProjectPlots {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: center;
-    justify-content: space-between;
+
 }
 
-.DarkPlots {
-    display: flex;
+.DarkPlots:nth-child(1),
+.DarkPlots:nth-child(5) {
+    z-index: 10;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.DarkPlotsDescription {
-    background-color: var(--Glass-Grayish-blue);
-    width: 70%;
-    height: 400px;
-    display: flex;
-    border-radius: 10px;
-    margin-left: -50rem;
+.DarkPlots:nth-child(4),
+.DarkPlots:nth-child(8) {
+    z-index: 9;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+div.DarkPlotsDescription:nth-of-type(2),
+div.DarkPlotsDescription:nth-of-type(6) {
+    background-color: var(--Glass-OT-BLACK);
+}
+
+.DarkPlotsDescription:nth-of-type(3),
+.DarkPlotsDescription:nth-of-type(7) {
+    background-color:var(--Glass-OT-BLACK);
+
+}
+
+.DarkProjectDescriptionFooter{
+    background-color: var(--Glass-OT-BLACK);
+    backdrop-filter: blur(10px);
+}
+.DarkProjectDescriptionFooter > p > a {
+    text-decoration: none;
+    color: var(--OT-YELLOW);
 }
 
 @media screen and (max-width: 768px) {
@@ -238,7 +316,7 @@
         height: 5vh;
         justify-content: center;
         align-items: center;
-        background-color: var(--Glass-Grayish-blue);
+        background-color:var(--Glass-OT-BLACK);
         backdrop-filter: blur(10px);
         border-radius: 5%;
     }
@@ -282,7 +360,67 @@
         margin-right: 0;
         margin-bottom: 0;
         margin-top: -8rem;
-        background-color: var(--Ultra-Glass-White);
+        background-color: var(--Glass-OT-BLACK);
         border-radius: 10px;
     }
+}
+
+@media screen and (max-width: 1800px) {
+    .ProjectBody {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ProjectPlots {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+.ProjectTitle {
+    font-size: 2rem;
+    width: 70vw;
+    text-align: center;
+}
+.ProjectDescription {
+    width: 90vw;
+}
+.AsidePlots{
+    font-size: 1.5rem;
+}   
+
+
+div.PlotsDescription:nth-of-type(2),
+div.PlotsDescription:nth-of-type(6) {
+    background-color: var(--ULTRAWHITE);
+    backdrop-filter: blur(10px);
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content:flex-end;
+    border-radius: 0px;
+    margin-left: 0rem;
+    padding-left: 0rem;
+    transform: translateX(0rem);
+    z-index: 1;
+}
+
+.PlotsDescription:nth-of-type(3),
+.PlotsDescription:nth-of-type(7) {
+    background-color:var(--ULTRAWHITE);
+    backdrop-filter: blur(0px);
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius:0px;
+    margin-left: 0rem;
+    padding-right: 0rem;
+    transform: translateX(0rem);
+    z-index: 1;
+}
+    
 }

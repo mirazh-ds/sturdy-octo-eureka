@@ -9,7 +9,6 @@ body {
     padding: 0;
     min-width: 100%;
     min-height: 100vh;
-
 }
 
 
@@ -25,5 +24,41 @@ body {
     align-items: center;
     justify-content: center;
 } 
+
+.provaimg {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0rem;
+    width: 100px;
+    height: 100px;
+}
+
+.opentusk {
+    width: auto;
+    background-color: var(--Glass-OT-WHITE);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+
+.puglia {
+    position: fixed;
+    top: 1rem;
+    right: 0rem;
+    padding: 1rem 3rem 1rem 1rem;
+    background-color: var(--Glass-OT-WHITE);
+    backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 768px) {
+    .opentusk {
+        width: 90vw;
+    }
+    
+}
 
 

@@ -8,10 +8,16 @@ interface WriterOne {
 const Writerone: React.FC<WriterOne> = ({ children }) => {
  const {isDarkMode} = useTheme()
   return (
+    <>
 <div className = "container">
-  <h1 className='little'>Hi, we are...</h1>
+  <h1 className='little'>Group group = New Group( ); presentano</h1>
   <h1 className='great'>{children}</h1>
 </div>
+
+<div>
+
+</div>
+    </>
   );
 };
 

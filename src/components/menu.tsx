@@ -31,8 +31,8 @@ const Menu: React.FC = () => {
     </label>
           <ul>
             <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/"       >HOME</Link></p ></li>
-            <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/project">PROJECT</Link></p ></li>
-            <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/about"  >ABOUT</Link></p ></li>
+            <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/project">L'IDEA</Link></p ></li>
+            <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/about"  >TEAM</Link></p ></li>
           </ul>
         </div>
       </div>

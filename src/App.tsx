@@ -9,8 +9,11 @@ import Project from './pages/project';
 import Writerone from './components/atoms/writerone';
 import GlassCard from './components/atoms/card';
 import Loader from './components/atoms/loader'; // Import the Loader component
+import logo from './logo.png';
+import regionepuglia from './utility/regione_puglia.svg';
+import opentusk from './utility/opentusk.png';
+import About from './pages/about';
 
-const About = lazy(() => import('./pages/about'));
 
 function App() {
   usePreloadPages();
@@ -32,7 +35,10 @@ const AppContent = React.memo(() => {
     <>
       <Menu />
       {isHomePage && <Wallpaper />}
-      {isHomePage && <Writerone>Group</Writerone>}
+      {isHomePage && <Writerone>ZonaZero</Writerone>}
+      {isHomePage && <img className='provaimg' src={logo} alt='placeholderperlogooraebruttolosomalocambiogiuroi'/>}
+      {isHomePage && <img className='puglia' src={regionepuglia} alt='regpul'/>}
+      {isHomePage && <img className='opentusk' src={opentusk} alt='logo'/>}
       <Suspense fallback={<Loader />}> {/* Use Loader as fallback */}
         <Routes>
           <Route path="/" />

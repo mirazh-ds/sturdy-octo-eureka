@@ -1,6 +1,6 @@
 html {
     height:100%;
-    background-color:var(--OT-CYAN);
+    background-color:var(--OT-WHITE);
 }
 
 .wallpaper {
@@ -12,7 +12,7 @@ html {
     animation:slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(
         -60deg, 
-        var(--OT-GREEN) 50%,
+        var(--OT-WHITE) 50%,
          var(--OT-YELLOW) 50%);
     bottom:0;
     left:-50%;

@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Marmelad&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&family=Sen:wght@400..800&display=swap');
+
+
+.rubik-pixels-regular {
+  font-family: "Rubik Pixels", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 .marmelad-regular {
@@ -35,13 +42,13 @@
 --OT-YELLOW: #FFCF00;
 
 --Glass-OT-WHITE: #FFFFFF33;
---Glass-OT-BLUE: #5556FE33;
+--Glass-OT-BLUE:  #5556FE33;
 --Glass-OT-BLACK: #0B121F33;
---Glass-OT-RED: #FF0F3E33;
---Glass-OT-CYAN: #64FAFD33;
+--Glass-OT-RED:   #FF0F3E33;
+--Glass-OT-CYAN:  #64FAFD33;
 --Glass-OT-GREEN: #00FFA333;
---Glass-OT-YELLOW: #FFCF0033;
-
+--Glass-OT-YELLOW:#FFCF0033;
+--ULTRAWHITE:  rgba(255, 255, 255, 0.575);
 
 
   --White: #ffffff;
