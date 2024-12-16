@@ -25,6 +25,25 @@
 
 
 :root{
+
+--OT-WHITE: #FFFFFF;
+--OT-BLUE: #5556FE;
+--OT-BLACK: #0B121F;
+--OT-RED: #FF0F3E;
+--OT-CYAN: #64FAFD;
+--OT-GREEN: #00FFA3;
+--OT-YELLOW: #FFCF00;
+
+--Glass-OT-WHITE: #FFFFFF33;
+--Glass-OT-BLUE: #5556FE33;
+--Glass-OT-BLACK: #0B121F33;
+--Glass-OT-RED: #FF0F3E33;
+--Glass-OT-CYAN: #64FAFD33;
+--Glass-OT-GREEN: #00FFA333;
+--Glass-OT-YELLOW: #FFCF0033;
+
+
+
   --White: #ffffff;
   --Amethyst: #9b5de5ff;
   --Brilliant-rose: #f15bb5ff;

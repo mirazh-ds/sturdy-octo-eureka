@@ -76,8 +76,7 @@
 .menu-wrap .toggler:checked + .hamburger > div{
     transform: rotate(135deg);
     height: 10px;
-    background-color: var(--Coral-red);
-
+    background-color: var(--OT-RED);
 }
 /* Turn Lines into X */
 .menu-wrap .toggler:checked + .hamburger > div:before,
@@ -86,7 +85,7 @@
     transform: rotate(90deg);
     height: 10px;
     transition: background-color 0.4s ease;
-    background-color: var(--Coral-red);
+    background-color: var(--OT-RED);
 }
 
 /* Rotate on hover when checked */
@@ -120,7 +119,7 @@
 }
 
 .div {
-    background-color: var(--Glass-White);
+    background-color: var(--Glass-OT-WHITE);
     backdrop-filter: blur(10px);
     border-radius: 0 4% 4% 0;
     width: 50vh;
@@ -171,7 +170,6 @@ div.div.darkdiv {
 }
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: var(--Maize);
     font-size: 1.5rem;
     padding: 1rem;
 }
@@ -184,14 +182,14 @@ div.div.darkdiv {
 
 .MenuLink {
     text-decoration: none;
-    color:var(--Coral-red);
+    color:var(--OT-BLUE);
     font-size: 5rem;
     font-weight: 800;
     font-weight: bold;
 }
 .darkMenuLink {
     text-decoration: none;
-    color:var( --Glass-Maize);
+    color:var( --OT-YELLOW);
     font-size: 5rem;
     font-weight:800;
     font-weight: bold;
@@ -199,7 +197,7 @@ div.div.darkdiv {
 }
 
 .MenuLink:hover {
-    color: var(--Amethyst);
+    color: var(--OT-GREEN);
 }
 
 .ui-switch {

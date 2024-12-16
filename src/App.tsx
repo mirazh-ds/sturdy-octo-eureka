@@ -8,6 +8,7 @@ import usePreloadPages from './utility/usePreloadPages';
 import Project from './pages/project';
 import Writerone from './components/atoms/writerone';
 import GlassCard from './components/atoms/card';
+import Loader from './components/atoms/loader'; // Import the Loader component
 
 const About = lazy(() => import('./pages/about'));
 
@@ -18,10 +19,6 @@ function App() {
     <ThemeProvider>
       <Router>
         <AppContent />
-        
-        
-
-
       </Router>
     </ThemeProvider>
   );
@@ -34,18 +31,9 @@ const AppContent = React.memo(() => {
   return (
     <>
       <Menu />
-{     isHomePage && <Wallpaper/>
-    
-}
-{     isHomePage && 
-        <Writerone>
-        Group
-        </Writerone>
-
-}   
-
-
-      <Suspense fallback={<Writerone>Loading...</Writerone>}>
+      {isHomePage && <Wallpaper />}
+      {isHomePage && <Writerone>Group</Writerone>}
+      <Suspense fallback={<Loader />}> {/* Use Loader as fallback */}
         <Routes>
           <Route path="/" />
           <Route path="/project" element={<Project />} />

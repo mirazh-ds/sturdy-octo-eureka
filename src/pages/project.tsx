@@ -5,6 +5,7 @@ import GiorniPlot from '../components/giorniplot';
 import EtaPlot from '../components/etaplot';
 import Scatter3DPlot from '../components/severitaplot';
 import './project.css';
+import Loader from '../components/atoms/loader';
 
 const Project: React.FC = () => {
   const { isDarkMode } = useTheme();
@@ -34,7 +35,6 @@ const Project: React.FC = () => {
           </div>
 
             <div className={`PlotsDescription ${isDarkMode ? 'DarkPlotsDescription' : ''}`}>
-
             </div>
 
 

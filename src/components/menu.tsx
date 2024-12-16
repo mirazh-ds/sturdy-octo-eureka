@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation } from "react
 import { useTheme } from  '../utility/TjemeContext';
 import './menu.css';
 import About from '../pages/about';
-import Loader from './atoms/loader';
+import Loader from './atoms/vertcarousel';
 
 const Menu: React.FC = () => {
   const { isDarkMode, toggleTheme } = useTheme();
