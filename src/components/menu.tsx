@@ -20,7 +20,7 @@ const Menu: React.FC = () => {
   <div className="menu-wrap">
     <input type="checkbox" className="toggler"/>
     <div className="hamburger"><div></div></div>
-    <div className="menu">
+    <div className={`menu ${isDarkMode ? 'darkMenu' : 'menu'}`}>
       <div className={`div ${isDarkMode ? 'darkdiv' : 'div'}`}>
         <div className='uelle'>
         <label className="ui-switch">

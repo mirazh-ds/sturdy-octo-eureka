@@ -20,8 +20,8 @@ const Project: React.FC = () => {
 
         <div className={`ProjectDescription ${isDarkMode ? 'DarkProjectDescription' : ''}`}>
           <p>
-            Questo progetto è stato realizzato per l' hackathon etc etc.
-            Il dataset utilizzato è stato concesso da <a className='datalink' href="https://wwww.dati-puglia.gov">dati puglia </a>.
+            Questo progetto è stato realizzato per l' hackathon etc etc
+            Il dataset utilizzato è stato concesso da <a className='datalink' href="https://dati.puglia.it/web/guest/">dati.puglia.it</a>
           </p>
         </div>
 

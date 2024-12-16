@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: left;
-
+    transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
 }
 
 .div {
@@ -147,7 +147,16 @@ div.div.darkdiv {
     justify-content: left;
     transform: scale(0); 
     transform-origin: top left;
-    transition: all 0.4s ease;}
+    transition: all 0.4s ease;
+}
+.menu-wrap .toggler:checked ~ .darkMenu {
+    background-color: transparent !important;
+    backdrop-filter: blur(5px) !important;
+    transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+}
+.menu-wrap .toggler:not(:checked) ~ .darkMenu {
+    transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+}
 
 
 .menu-wrap .menu > div > div{
@@ -186,6 +195,7 @@ div.div.darkdiv {
     font-size: 5rem;
     font-weight:800;
     font-weight: bold;
+    backdrop-filter: blur(30px);
 }
 
 .MenuLink:hover {
@@ -392,9 +402,18 @@ div.div.darkdiv {
     }
 
     div.div.darkdiv {
-        background-color: rgba(38, 38, 61, 0.744);
-        backdrop-filter: blur(40px);
+        background-color: rgba(26, 26, 32, 0.618);
+        backdrop-filter: blur(20px);
 }
+
+    .darkMenuLink {
+        text-decoration: none;
+        color:var( --Maize);
+        font-size: 5rem;
+        font-weight:800;
+        font-weight: bold;
+        backdrop-filter: blur(30px);
+    }
     
     .menu-wrap .menu > div > div > ul > li {
         list-style: none;

@@ -5,7 +5,7 @@
     padding: 2rem 1rem 2rem 1rem;
     width: 90vw;
     height: auto;
-    background-color: var(--Glass-White);
+    background-color: transparent;
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
@@ -63,10 +63,12 @@
 }
 
 .PlotsDescription {
-  background-color: var(--Ultra-Glass-White);
-  width: 40%;
-  height: 400px;
-  display: flex;
+    background-color: var(--Ultra-Glass-White);
+    width: 70%;
+    height: 400px;
+    display: flex;
+    border-radius: 10px;
+    margin-left: -50rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -131,6 +133,9 @@
     .PlotsDescription {
         width: 90vw;
         height: 400px;  
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
         margin-top: -8rem;
         background-color: var(--Ultra-Glass-White);
         border-radius: 10px;
@@ -151,9 +156,10 @@
     padding: 2rem 1rem 2rem 1rem;
     width: 90vw;
     height: auto;
-    background-color: var(--Glass-White);
+    background-color: transparent;
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    color: aliceblue;
 }
 
 .DarkProjectTitle {
@@ -164,7 +170,7 @@
     height: 5vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--Glass-White);
+    background-color: var(--Glass-Grayish-blue);
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
@@ -178,7 +184,7 @@
     justify-self: center;
     justify-content: center;
     align-items: center;
-    background-color: var(--Glass-White);
+    background-color: var(--Glass-Grayish-blue);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     margin-bottom: 2rem;
@@ -203,10 +209,12 @@
 }
 
 .DarkPlotsDescription {
-    background-color: var(--Ultra-Glass-White);
-    width: 40%;
+    background-color: var(--Glass-Grayish-blue);
+    width: 70%;
     height: 400px;
     display: flex;
+    border-radius: 10px;
+    margin-left: -50rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -230,9 +238,9 @@
         height: 5vh;
         justify-content: center;
         align-items: center;
-        background-color: var(--Glass-White);
+        background-color: var(--Glass-Grayish-blue);
         backdrop-filter: blur(10px);
-        border-radius: 10px;
+        border-radius: 5%;
     }
 
     .DarkProjectDescription {
@@ -270,6 +278,9 @@
     .DarkPlotsDescription {
         width: 90vw;
         height: 400px;  
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
         margin-top: -8rem;
         background-color: var(--Ultra-Glass-White);
         border-radius: 10px;
