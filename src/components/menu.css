@@ -417,10 +417,12 @@ div.div.darkdiv {
         list-style: none;
         color: var(--Maize);
         font-size: 1rem;
-        padding: 2rem;
+        padding: .5rem;
         font-weight: 800;
         font-style: bold;
     }
+
+    
     
     
 }

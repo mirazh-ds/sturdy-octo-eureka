@@ -1,0 +1,218 @@
+
+.dashcontent {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 2;
+    transform: 0.5s;
+    color:var(--OT-BLACK);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .dashcontent>section>h2 {
+    cursor: pointer;
+    background-color: transparent;
+   }
+   
+   .darkdashcontent {
+    color: rgb(255, 255, 255);
+   }
+
+   .darkboxheader {
+        background-color: var(--Glass-OT-BLACK);
+   }
+
+.prechoicedash {
+   padding-top: 2rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   padding-bottom: 2rem;
+   text-align: center;
+   background-color: transparent;
+   font-family: "Sen", sans-serif;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+.DashboardLeftAside {
+    font-family: "Sen", sans-serif;
+}
+
+.shrunk {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    background-color: var(--Glass-OT-WHITE);
+    width: auto;
+    padding: 10px;
+    margin-top: 0rem;
+    border-radius: 10px;
+}
+
+
+.DashboardCheck {
+    display: none;
+
+    margin: 10px;
+}
+
+
+
+.DashboardCheck + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 35px;
+    margin-bottom: 0px;
+    user-select: none;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.DashboardCheck + label::before {
+    display: none;
+
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #757575;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.DashboardCheck:checked + label {
+    background-color: var(--OT-GREEN);
+    padding: 1rem;
+}
+
+.darkDashboardCheck:checked + label {
+    background-color: var(--OT-BLUE);
+}
+
+.DashboardCheck:checked + label::before {
+    background-color: var(--OT-GREEN);
+    border-color: var(--OT-GREEN);
+
+    display: none;
+}
+
+.DashboardCheck:checked + label::after {
+    display: none;
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 10px;
+    height: 5px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+}
+
+
+.one , .two , .three , .four , .five ,
+.six, .seven , .eight , .nine {
+    background-color: var(--ULTRAWHITE);
+    height: 75vh;
+    width: 80vw;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    place-content: center;
+    place-items: center;
+}
+
+.one.dark-mode, .two.dark-mode, .three.dark-mode, .four.dark-mode, .five.dark-mode,
+.six.dark-mode, .seven.dark-mode, .eight.dark-mode, .nine.dark-mode {
+    background-color: var(--Glass-OT-BLACK);
+}
+
+.dashplottitle {
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-family: "Sen", sans-serif;
+    font-size: 2rem;
+    background-color: var(--ULTRAWHITE);
+}
+
+.darkDashplottitle {
+    background-color: var(--Glass-OT-BLACK);
+}
+
+.darkDashboardLeftAside {
+    background-color: var(--Glass-OT-BLACK);
+}
+
+
+@media screen and (max-width: 768px) {
+  .boxheader,
+  .DashboardCheck + label {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .prechoicedash{
+    text-align: center;
+    width: 80vw;
+    height: auto;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+
+  .DashboardLeftAside {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+    padding: 0.5rem; 
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  span::before,span::after{
+    transform: translate(8rem, -2rem);
+  }
+
+  .box {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .dashcontent {
+    padding: 10px;
+    margin: -1rem;
+    border-radius: 0;
+  }
+}
+

@@ -32,6 +32,7 @@ const Menu: React.FC = () => {
           <ul>
             <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/"       >HOME</Link></p ></li>
             <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/project">L'IDEA</Link></p ></li>
+            <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/dashboard">DATI</Link></p ></li>
             <li><p className='MenuA' onClick={closeMenu}><Link className={`MenuLink ${isDarkMode ? 'darkMenuLink' : 'MenuLink'}`} to="/about"  >TEAM</Link></p ></li>
           </ul>
         </div>

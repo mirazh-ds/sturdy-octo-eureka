@@ -28,10 +28,10 @@ const Project: React.FC = () => {
           Il progetto è stato realizzato durante l'evento <a className='datalink' href="https://dati.puglia.it/hackathon-2024">hackathon di Opentusk 2024</a> a Bari.
             <br />
             <br />
-            ZonaZero è un progetto che nasce con l'obiettivo di analizzare i dati relativi agli incidenti stradali in Puglia, 
-            al fine di individuare le zone e i periodi a rischio.
+            <strong>ZonaZero</strong> è un progetto che nasce con l'obiettivo di analizzare i dati relativi agli incidenti stradali in Puglia, 
+            al fine di <strong>individuare le zone e i periodi a rischio</strong>.
             <br />
-            L'idea è quella di creare un'applicazione che segnali le zone a rischio di incidenti, integrando i dati con Google Maps.
+            L'idea è quella di creare un'applicazione che segnali le zone a rischio di incidenti, integrando i dati con <strong>Open Street Maps</strong>.
             <br />
             <br />
             Le finalità del progetto sono molteplici: da un lato, si vuole sensibilizzare i cittadini sul tema della sicurezza stradale, contemporaneamente si vuole fornire ai comuni strumenti per la prevenzione e la gestione degli incidenti.
@@ -58,9 +58,9 @@ const Project: React.FC = () => {
          
 
           <div className={`PlotsDescription ${isDarkMode ? 'DarkPlotsDescription' : ''}`}>
-          <aside className='AsidePlots'>
-                Ovviamente su una vasta scala di campioni era probabile la presenza di una omogenea distribuzione di eta, ma ciò non toglie che ci siano delle anomalie...
-          </aside>
+            <aside className='AsidePlots'>
+              Ovviamente su una vasta scala di campioni era probabile la presenza di una omogenea distribuzione di eta, ma ciò non toglie che ci siano delle anomalie... Quindi abbiamo deciso di incrociare i dati forniti dalla regione con altri dataset. <br />( "istat.it" , "kaggle.com")
+            </aside>
           </div>
           <div className={`Plots ${isDarkMode ? 'DarkPlots' : ''}`}>
             <EtaPlot />
@@ -74,7 +74,8 @@ const Project: React.FC = () => {
 
           <div className={`PlotsDescription ${isDarkMode ? 'DarkPlotsDescription' : ''}`}>
           <aside className='AsidePlots'>
-              In questo testo si spiega come l'idea di segnalare periodi e zone ad alto rischio di incidenti possa essere un'idea interessante per la vita del cittadino normale...
+              In questo testo si spiega come l'idea di raccogliere informazioni su periodi e zone ad alto rischio di incidenti possa essere un'idea interessante per la vita del cittadino... <br />
+              e per la gestione di queste da parte del comune
           </aside>
           </div>
 
@@ -83,7 +84,7 @@ const Project: React.FC = () => {
 
           <div className={`PlotsDescription ${isDarkMode ? 'DarkPlotsDescription' : ''}`}>
           <aside className='AsidePlots'>
-              In questo testo si spiega, alla fine, di come un portale o app che segnali queste caratteristiche (integrate con google maps) possa non solo aiutare i cittadini ma anche i comuni a fare chiarezza.
+              Infine la raccolta di dati forniti dalla regione e segnalazioni del cittandino puo essere usata in combinazione con il machine learning e reti neurali per dare vita ad un app che <strong> consigli in tempo reale percorsi piu sicuri per il pedone e per il guidatore</strong>. 
           </aside>
           </div>
           <div className={`Plots ${isDarkMode ? 'DarkPlots' : ''}`}>

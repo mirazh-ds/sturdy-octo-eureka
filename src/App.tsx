@@ -13,6 +13,7 @@ import logo from './logo.png';
 import regionepuglia from './utility/regione_puglia.svg';
 import opentusk from './utility/opentusk.png';
 import About from './pages/about';
+import Dashboard from './pages/dashboard';
 
 
 function App() {
@@ -44,6 +45,8 @@ const AppContent = React.memo(() => {
           <Route path="/" />
           <Route path="/project" element={<Project />} />
           <Route path="/about" element={<About />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+
         </Routes>
       </Suspense>
     </>
