@@ -35,7 +35,9 @@
 }
 
 .ProjectDescription {
+    text-align: center;
     font-family: 'Sen', sans-serif;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: row;
     width: 70vw;

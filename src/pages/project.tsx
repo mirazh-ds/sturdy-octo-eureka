@@ -20,7 +20,7 @@ const Project: React.FC = () => {
             Il Progetto  
              </strong>
              <br />
-                Fasi iniziali, analisi, idee e conclusioni.
+                Fasi iniziali, analisi, idee e sviluppo.
         </h2>
 
         <div className={`ProjectDescription ${isDarkMode ? 'DarkProjectDescription' : ''}`}>
@@ -29,9 +29,12 @@ const Project: React.FC = () => {
             <br />
             <br />
             <strong>ZonaZero</strong> è un progetto che nasce con l'obiettivo di analizzare i dati relativi agli incidenti stradali in Puglia, 
-            al fine di <strong>individuare le zone e i periodi a rischio</strong>.
+           <br /> al fine di <strong>individuare le zone e i periodi a rischio</strong>.
+            <br />
             <br />
             L'idea è quella di creare un'applicazione che segnali le zone a rischio di incidenti, integrando i dati con <strong>Open Street Maps</strong>.
+            <br />
+            Cosi poi da avere un'app che funzioni da navigatore e da dashboard di zone e strade sicure.
             <br />
             <br />
             Le finalità del progetto sono molteplici: da un lato, si vuole sensibilizzare i cittadini sul tema della sicurezza stradale, contemporaneamente si vuole fornire ai comuni strumenti per la prevenzione e la gestione degli incidenti.
@@ -74,8 +77,10 @@ const Project: React.FC = () => {
 
           <div className={`PlotsDescription ${isDarkMode ? 'DarkPlotsDescription' : ''}`}>
           <aside className='AsidePlots'>
-              In questo testo si spiega come l'idea di raccogliere informazioni su periodi e zone ad alto rischio di incidenti possa essere un'idea interessante per la vita del cittadino... <br />
-              e per la gestione di queste da parte del comune
+              <br />
+              Ma integrare una vasta fonte di dati con Machine Learning e Reti neruali per prevedere e fornire report in tempo reale è qualcosa che crediamo possa essere utile...
+              <br />
+              sia al cittadino (sensibilizzazione sull'argomento e sicurezza pratica) sia ai comuni che potrebbero vantare un nuovo alleato per la sicurezza stradale.
           </aside>
           </div>
 
@@ -84,7 +89,7 @@ const Project: React.FC = () => {
 
           <div className={`PlotsDescription ${isDarkMode ? 'DarkPlotsDescription' : ''}`}>
           <aside className='AsidePlots'>
-              Infine la raccolta di dati forniti dalla regione e segnalazioni del cittandino puo essere usata in combinazione con il machine learning e reti neurali per dare vita ad un app che <strong> consigli in tempo reale percorsi piu sicuri per il pedone e per il guidatore</strong>. 
+              Infine la raccolta di dati forniti dalla regione e segnalazioni del cittandino puo essere usata in combinazione con il machine learning e reti neurali per dare vita ad un app che <strong> consigli in tempo reale percorsi piu sicuri</strong> per il pedone e per il guidatore. 
           </aside>
           </div>
           <div className={`Plots ${isDarkMode ? 'DarkPlots' : ''}`}>

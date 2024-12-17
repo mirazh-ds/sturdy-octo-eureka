@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const PlotContainer = styled.div`
   .plotquattro {
+    place-self:center;
     width: 80vw;
     height: 60vh;
     background-color: rgba(249, 249, 249, 0);

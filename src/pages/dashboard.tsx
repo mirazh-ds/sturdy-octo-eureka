@@ -10,6 +10,10 @@ import PlotQuattro from '../components/plots/plotquattro';
 import PlotCinque from '../components/plots/plotcinque';
 import PlotSei from '../components/plots/plotsei';
 import { Plots } from 'plotly.js';
+import reteneurale from '../utility/Rete neurale.png'
+import metrics from '../utility/Metrics.png'
+import tensor from '../utility/Screenshot from 2024-12-17 15-49-56.png'
+
 
 const Dashboard: React.FC = () => {
   const { isDarkMode } = useTheme();
@@ -49,7 +53,8 @@ const Dashboard: React.FC = () => {
             </section>
 
             <div className={`prechoicedash ${selectedOption !== null ? 'hidden' : ''} ${isDarkMode ? 'darkPrechoicedash' : ''}`}>
-              Descrizione sulla pagina dati e dashboard. <br />
+              In questa dashboard vengono esaminate le fasi salienti della nostra ricerca. <br />
+              (i plot sono interattivi)
             </div>
 
             <div className={`DashboardLeftAside ${selectedOption !== null ? 'shrunk' : ''} ${isDarkMode ? 'darkDashboardLeftAside' : ''}`}>
@@ -69,8 +74,8 @@ const Dashboard: React.FC = () => {
             </div>
 
             <div className={`prechoicedash ${selectedOption !== null ? 'hidden' : ''} ${isDarkMode ? 'darkPrechoicedash' : ''}`}>
-              Descrizione sulla pagina dati e dashboard. <br />
-              hfdsbsfd s fbf dshb kjashbfkj sdf s fhbslh dbflsa bfs lhsbf lkhb saldbf sjfa bskjdfh bskjdhfbs hbsidfk bsd fbsb
+              (cliccare sui nomi per aprire la dashboard) <br />
+
             </div>
 
             <div className={`one ${isDarkMode ? 'dark-mode' : ''}`} style={{ display: selectedOption === 1 ? 'block' : 'none' }}>
@@ -114,21 +119,28 @@ const Dashboard: React.FC = () => {
               <PlotSei />
             </div>
             <div className={`seven ${isDarkMode ? 'dark-mode' : ''}`} style={{ display: selectedOption === 7 ? 'block' : 'none' }}>
-              <div className={`dashplottitle ${isDarkMode ? 'darkDashplottitle' : ''}`}>
-                plot bho  - ?????
+            <div className={`dashplottitle ${isDarkMode ? 'darkDashplottitle' : ''}`}>
+                Struttura Reti Neurali
               </div>
-              <PlotDue />
-            </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                <img src={reteneurale} alt="reteneurale" style={{ transform: 'scale(0.8)', margin: '-80px' }} />
+              </div>
+                
+                </div>
             <div className={`eight ${isDarkMode ? 'dark-mode' : ''}`} style={{ display: selectedOption === 8 ? 'block' : 'none' }}>
               <div className={`dashplottitle ${isDarkMode ? 'darkDashplottitle' : ''}`}>
-                plot bho  - ?????
+                Metriche rete neurale ( Tensorflow )
               </div>
-              <PlotDue />
+              <img src={tensor} alt="tensor" />
             </div>
             <div className={`nine ${isDarkMode ? 'dark-mode' : ''}`} style={{ display: selectedOption === 9 ? 'block' : 'none' }}>
               <div className={`dashplottitle ${isDarkMode ? 'darkDashplottitle' : ''}`}>
-                plot bho  - ?????
-                <PlotDue/>
+                <div>
+                    Risultati Rete Neurale
+                </div>
+              <img src={metrics} alt="metrics" style={{ transform: 'scale(1)' }} />
+
+                
               </div>
             </div>
           </div>

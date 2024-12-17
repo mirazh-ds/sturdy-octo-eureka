@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const PlotContainer = styled.div`
   .plotuno {
+    place-self:center;
     width: 80vw;
     height: 60vh;
     background-color: rgba(249, 249, 249, 0);
@@ -35,7 +36,7 @@ const PlotUno: React.FC = () => {
   ];
 
   const layout = {
-    title: 'Bar Chart Example',
+    title: 'Bar Chart Incidenti',
     plot_bgcolor: isDarkMode ? '#333' : '#fff',
     paper_bgcolor: isDarkMode ? '#333' : '#fff',
     font: {

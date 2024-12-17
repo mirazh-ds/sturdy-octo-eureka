@@ -48,7 +48,11 @@
 
 
 .DashboardLeftAside {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Glass-OT-WHITE);
     font-family: "Sen", sans-serif;
+
 }
 
 .shrunk {
